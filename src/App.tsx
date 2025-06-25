@@ -1,6 +1,11 @@
+import PokeList from "./components/pokelist";
+
 export default function App() {
   return (
-    <h1>Hello World</h1>
+    <div className="content">
+      <h1>Pokedex</h1>
+      <PokeList />
+    </div>
   )
 }
 
