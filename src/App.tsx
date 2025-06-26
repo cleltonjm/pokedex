@@ -1,4 +1,4 @@
-import PokeList from "./components/pokelist";
+import PokeList from "./components/PokeList";
 
 export default function App() {
   return (
