@@ -58,7 +58,7 @@ export default function PokeList() {
           <Detail>
             <Types>
               {poke.types.map((t) => (
-                <Type key={t.type.name}>{t.type.name}</Type>
+                <Type key={t.type.name} typeName={t.type.name}>{t.type.name}</Type>
               ))}
             </Types>
 

@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import { typeColors } from "../../utils/typeColors";
+
+interface TypeProps {
+  typeName: string
+}
 
 export const Pokemons = styled.ol`
     display: grid;
@@ -60,7 +65,7 @@ export const Types = styled.ol`
     list-style: none;
 `;
 
-export const Type = styled.li`
+export const Type = styled.li<TypeProps>`
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
@@ -69,7 +74,7 @@ export const Type = styled.li`
     filter: brightness(1.1);
     text-align: center;
 
-    background-color: #61e1ca;
+    background-color: ${({ typeName }) => typeColors[typeName] || '#777'};
 `;
 
 export const Image = styled.img`
