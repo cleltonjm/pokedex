@@ -1,69 +1,39 @@
-# React + TypeScript + Vite
+## :notebook: Índice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* [Sobre](#Sobre)
+* [Tecnologias utilizadas](#tec)
+* [Como executar o projeto](#exec)
+* [Preview](#preview)
 
-Currently, two official plugins are available:
+## Preview
+![](https://github.com/cleltonjm/pokedex/blob/main/.github/desktop.jpg)
+![](https://github.com/cleltonjm/pokedex/blob/main/.github/mobile.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Sobre
+Este é um projeto desenvolvido durante o Bootcamp Santander 2023 FullStack pela DIO.
 
-## Expanding the ESLint configuration
+A proposta do projeto é o desenvolvimento de um site responsivo para fazer consumo da API pública PokeAPI!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias utilizadas<a name="tec" />
+O projeto está desenvolvido utilizando as seguintes tecnologias:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* React
+* JavaScript
+* HTML5 e CSS3
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Como executar o projeto:<a name="exec" />
 ```
+# Clonar o repositório
+git clone https://github.com/cleltonjm/pokedex
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Entrar no diretório
+cd pokedex
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Baixar as dependências
+npm install
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Executar o servidor
+npm run dev
 ```
+-----
+Desenvolvido por Clelton José Mielke.
